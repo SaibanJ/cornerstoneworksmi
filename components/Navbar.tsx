@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -32,20 +33,16 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo / Brand */}
-          <a href="#home" className="flex flex-col leading-tight">
-            <span
-              className="text-[#C9A227] font-bold tracking-widest uppercase text-xs"
-              style={{ fontFamily: "var(--font-inter)" }}
-            >
-              Faith Built. Storm Tested.
-            </span>
-            <span
-              className="text-white font-bold text-lg uppercase tracking-wide"
-              style={{ fontFamily: "var(--font-oswald)" }}
-            >
-              Cornerstone Roofing & Restoration
-            </span>
+          {/* Logo */}
+          <a href="#home" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="Cornerstone Roofing & Restoration LLC"
+              width={180}
+              height={103}
+              className="h-12 md:h-14 w-auto"
+              priority
+            />
           </a>
 
           {/* Desktop Nav */}
