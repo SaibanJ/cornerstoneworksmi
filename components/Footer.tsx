@@ -30,7 +30,7 @@ export default function Footer() {
               className="text-[#C9A227] text-sm tracking-widest uppercase"
               style={{ fontFamily: "var(--font-oswald)" }}
             >
-              Faith Built. ✝ Storm Tested.
+              Faith Built. &#x271D;&#xFE0E; Storm Tested.
             </p>
             <p
               className="text-gray-500 text-xs mt-2"

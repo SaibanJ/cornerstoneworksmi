@@ -197,7 +197,7 @@ export default function Contact() {
           <div className="bg-[#111111] border border-[#2a2a2a] p-8">
             {submitted ? (
               <div className="flex flex-col items-center justify-center h-full text-center py-12 gap-4">
-                <span className="text-[#C9A227] text-5xl">✝</span>
+                <span className="text-[#C9A227] text-5xl">&#x271D;&#xFE0E;</span>
                 <h3
                   className="text-2xl font-bold uppercase text-white"
                   style={{ fontFamily: "var(--font-oswald)" }}

@@ -26,9 +26,9 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 border border-[#C9A227]/50 px-4 py-1.5 mb-8 text-[#C9A227] text-sm font-medium tracking-widest uppercase"
           style={{ fontFamily: "var(--font-inter)" }}>
-          <span>✝</span>
+          <span>&#x271D;&#xFE0E;</span>
           <span>Licensed & Insured · Michigan Center, MI</span>
-          <span>✝</span>
+          <span>&#x271D;&#xFE0E;</span>
         </div>
 
         {/* Main headline */}
@@ -55,7 +55,7 @@ export default function Hero() {
           className="text-[#C9A227] text-base sm:text-lg tracking-[0.3em] uppercase font-medium mb-10"
           style={{ fontFamily: "var(--font-oswald)" }}
         >
-          Faith Built. ✝ Storm Tested.
+          Faith Built. &#x271D;&#xFE0E; Storm Tested.
         </p>
 
         {/* CTA Buttons */}
