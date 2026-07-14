@@ -166,7 +166,7 @@ export default function Contact() {
                 </div>
 
                 <a
-                  href="https://www.facebook.com/profile.php?id=61590137027445"
+                  href="https://www.facebook.com/people/Cornerstone-Roofing-Restoration-LLC/61590137027445/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 group"

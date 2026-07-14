@@ -91,7 +91,7 @@ export default function Footer() {
               Cody@Cornerstoneworksmi.com
             </a>
             <a
-              href="https://www.facebook.com/profile.php?id=61590137027445"
+              href="https://www.facebook.com/people/Cornerstone-Roofing-Restoration-LLC/61590137027445/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-400 hover:text-[#C9A227] transition-colors text-sm"
