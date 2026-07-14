@@ -4,21 +4,9 @@ export default function About() {
   return (
     <section id="about" className="py-20 px-4 sm:px-6 bg-[#0f0f0f]">
       <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-        {/* Branded about image — full width, prominent */}
-        <div className="relative w-full rounded-none overflow-hidden border border-[#C9A227]/20 mb-16">
-          <Image
-            src="/about-cornerstone.jpg"
-            alt="About Cornerstone Roofing & Restoration - Faith Built, Storm Tested"
-            width={1600}
-            height={900}
-            className="w-full h-auto"
-            priority
-          />
-        </div>
-
-        {/* Supporting text + badges below the image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Left — text */}
           <div>
             <p
               className="text-[#C9A227] text-sm font-medium tracking-[0.3em] uppercase mb-3"
@@ -34,8 +22,11 @@ export default function About() {
               <br />
               <span className="gold-text">Focused on You.</span>
             </h2>
+
+            <div className="gold-divider max-w-[80px] mb-8" />
+
             <div
-              className="text-gray-300 leading-relaxed space-y-4 text-base"
+              className="text-gray-300 leading-relaxed space-y-4 text-base mb-8"
               style={{ fontFamily: "var(--font-inter)" }}
             >
               <p>
@@ -52,11 +43,9 @@ export default function About() {
                 craftsmanship and a trustworthy experience from start to finish.
               </p>
             </div>
-          </div>
 
-          <div className="flex flex-col gap-8">
             {/* Badges */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 mb-8">
               {["Local", "Licensed", "Insured", "Free Estimates"].map((badge) => (
                 <span
                   key={badge}
@@ -69,7 +58,7 @@ export default function About() {
             </div>
 
             {/* Values grid */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 mb-8">
               {[
                 { label: "Faith Driven", desc: "Christian values in every job" },
                 { label: "Integrity First", desc: "Honest from estimate to cleanup" },
@@ -101,6 +90,25 @@ export default function About() {
               Get a Free Estimate
             </a>
           </div>
+
+          {/* Right — stone/cross photo */}
+          <div className="relative">
+            <div className="relative overflow-hidden border border-[#C9A227]/20">
+              <Image
+                src="/about-photo.jpg"
+                alt="Jesus Christ The Chief Cornerstone - Ephesians 2:20"
+                width={815}
+                height={1024}
+                className="w-full h-auto"
+              />
+            </div>
+            {/* Gold corner accents */}
+            <div className="absolute -top-2 -left-2 w-6 h-6 border-t-2 border-l-2 border-[#C9A227]" />
+            <div className="absolute -top-2 -right-2 w-6 h-6 border-t-2 border-r-2 border-[#C9A227]" />
+            <div className="absolute -bottom-2 -left-2 w-6 h-6 border-b-2 border-l-2 border-[#C9A227]" />
+            <div className="absolute -bottom-2 -right-2 w-6 h-6 border-b-2 border-r-2 border-[#C9A227]" />
+          </div>
+
         </div>
       </div>
     </section>
