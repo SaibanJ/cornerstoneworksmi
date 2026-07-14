@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
   }
 
   const { error } = await resend.emails.send({
-    from: "Cornerstone Website <onboarding@resend.dev>",
+    from: "Cornerstone Roofing & Restoration <noreply@cornerstoneworksmi.com>",
     to: "Cody@Cornerstoneworksmi.com",
     replyTo: email,
     subject: `New Contact Form Submission from ${name}`,
