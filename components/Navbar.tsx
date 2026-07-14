@@ -4,12 +4,12 @@ import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
+  { label: "About", href: "/#about" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -33,7 +33,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Brand */}
-          <a href="#home" className="flex flex-col leading-tight">
+          <a href="/#home" className="flex flex-col leading-tight">
             <span
               className="text-[#C9A227] font-bold tracking-widest uppercase text-xs"
               style={{ fontFamily: "var(--font-inter)" }}
