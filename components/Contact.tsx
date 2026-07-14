@@ -19,11 +19,27 @@ export default function Contact() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: wire up to email service (Resend, Formspree, etc.)
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+
+    setLoading(false);
+
+    if (res.ok) {
+      setSubmitted(true);
+    } else {
+      setError("Something went wrong. Please call us at 517-392-3496.");
+    }
   };
 
   return (
@@ -266,12 +282,18 @@ export default function Contact() {
                     placeholder="Tell us about your roofing needs..."
                   />
                 </div>
+                {error && (
+                  <p className="text-red-400 text-sm" style={{ fontFamily: "var(--font-inter)" }}>
+                    {error}
+                  </p>
+                )}
                 <button
                   type="submit"
-                  className="w-full bg-[#C9A227] hover:bg-[#F0C040] text-black font-bold py-4 text-base uppercase tracking-wider transition-colors"
+                  disabled={loading}
+                  className="w-full bg-[#C9A227] hover:bg-[#F0C040] disabled:opacity-60 disabled:cursor-not-allowed text-black font-bold py-4 text-base uppercase tracking-wider transition-colors"
                   style={{ fontFamily: "var(--font-oswald)" }}
                 >
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                 </button>
               </form>
             )}
