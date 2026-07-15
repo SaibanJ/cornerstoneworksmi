@@ -74,7 +74,7 @@ export default function Hero() {
             style={{ fontFamily: "var(--font-oswald)" }}
           >
             <Phone size={20} />
-            Call 517-392-3496
+            Call (517) 392-3496
           </a>
         </div>
 

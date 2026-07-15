@@ -38,7 +38,7 @@ export default function Contact() {
     if (res.ok) {
       setSubmitted(true);
     } else {
-      setError("Something went wrong. Please call us at 517-392-3496.");
+      setError("Something went wrong. Please call us at (517) 392-3496.");
     }
   };
 
@@ -91,7 +91,7 @@ export default function Contact() {
                       className="text-white font-medium text-lg group-hover:text-[#C9A227] transition-colors"
                       style={{ fontFamily: "var(--font-oswald)" }}
                     >
-                      517-392-3496
+                      (517) 392-3496
                     </p>
                   </div>
                 </a>

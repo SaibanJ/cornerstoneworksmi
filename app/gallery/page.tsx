@@ -72,7 +72,7 @@ export default function GalleryPage() {
                 className="bg-[#C9A227] hover:bg-[#F0C040] text-black font-bold px-10 py-4 text-base uppercase tracking-wider transition-colors"
                 style={{ fontFamily: "var(--font-oswald)" }}
               >
-                Call 517-392-3496
+                Call (517) 392-3496
               </a>
               <a
                 href="/#contact"

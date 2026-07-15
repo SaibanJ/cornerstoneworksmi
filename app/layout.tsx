@@ -73,7 +73,7 @@ const jsonLd = {
 export const metadata: Metadata = {
   title: "Cornerstone Roofing & Restoration LLC | Michigan Center, MI",
   description:
-    "Michigan Center roofing contractor — roof replacement, repair, storm damage restoration, siding, and insurance claims. Licensed and insured. Free estimates. Call 517-392-3496.",
+    "Michigan Center roofing contractor — roof replacement, repair, storm damage restoration, siding, and insurance claims. Licensed and insured. Free estimates. Call (517) 392-3496.",
   keywords:
     "roofing Michigan Center MI, roof repair Michigan, storm damage restoration, roof replacement, siding exteriors, insurance claim roofing, Cornerstone Roofing",
   openGraph: {

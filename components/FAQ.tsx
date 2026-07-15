@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "How do I schedule a free estimate?",
     answer:
-      "Easy — call us at 517-392-3496, email Cody@Cornerstoneworksmi.com, or fill out the contact form on this page. We'll get back to you quickly and schedule a time that works for you.",
+      "Easy — call us at (517) 392-3496, email Cody@Cornerstoneworksmi.com, or fill out the contact form on this page. We'll get back to you quickly and schedule a time that works for you.",
   },
   {
     question: "Are you licensed and insured?",

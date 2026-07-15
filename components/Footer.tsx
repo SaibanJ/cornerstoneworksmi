@@ -80,7 +80,7 @@ export default function Footer() {
               style={{ fontFamily: "var(--font-inter)" }}
             >
               <Phone size={14} className="text-[#C9A227]" />
-              517-392-3496
+              (517) 392-3496
             </a>
             <a
               href="mailto:Cody@Cornerstoneworksmi.com"

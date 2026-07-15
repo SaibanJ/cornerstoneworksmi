@@ -66,7 +66,7 @@ export default function Navbar() {
               style={{ fontFamily: "var(--font-oswald)" }}
             >
               <Phone size={14} />
-              517-392-3496
+              (517) 392-3496
             </a>
           </div>
 
@@ -102,7 +102,7 @@ export default function Navbar() {
               style={{ fontFamily: "var(--font-oswald)" }}
             >
               <Phone size={16} />
-              517-392-3496
+              (517) 392-3496
             </a>
           </div>
         </div>
