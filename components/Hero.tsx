@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background image */}
       <div
@@ -22,7 +22,7 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto pt-16 md:pt-20">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 border border-[#C9A227]/50 px-4 py-1.5 mb-8 text-[#C9A227] text-sm font-medium tracking-widest uppercase"
           style={{ fontFamily: "var(--font-inter)" }}>
